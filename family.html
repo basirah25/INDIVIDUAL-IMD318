@@ -46,10 +46,93 @@
 </div>
 
 <div class="page-nav">
-    <a class="nav-arrow left"></a>
-    <a class="nav-arrow right"></a>
+    <a href="experience.html" class="nav-arrow left">
+        <span>❮</span>
+    </a>
+    <a href="education.html" class="nav-arrow right">
+        <span>❯</span>
+    </a>
 </div>
 
+<script src="nav.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+<!-- img 1 by 1 fam mem -->
+
+<h4 style="text-align:center; color:DarkSlateBlue  ; background-color:Thistle ; text-decoration: underline; font-size:25px;font-family: Garamond">My Family Members </h4>
+<div class="row-fam ">
+  <div class="column-fam ">
+    <div class="container-fam ">
+      <img src="mem1.jpeg" alt="Avatar" class="image-fam ">
+      <div class="overlay-fam">Dad</div>
+    </div>
+  </div>
+
+  <div class="column-fam ">
+    <div class="container-fam ">
+      <img src="mem2.jpeg" alt="Avatar" class="image-fam ">
+      <div class="overlay-fam">Mom</div>
+    </div>
+  </div>
+
+  <div class="column-fam ">
+    <div class="container-fam ">
+      <img src="mem3.jpeg" alt="Avatar" class="image-fam ">
+      <div class="overlay-fam">First Sister </div>
+    </div>
+  </div>
+
+  <div class="column-fam ">
+    <div class="container-fam ">
+      <img src="mem4.jpeg" alt="Avatar" class="image-fam ">
+      <div class="overlay-fam">Second Sister</div>
+    </div>
+  </div>
+
+  <div class="column-fam ">
+    <div class="container-fam ">
+      <img src="mem5.jpeg" alt="Avatar" class="image-fam ">
+      <div class="overlay-fam ">Me ✌🏻</div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<!-- slideshow gambar family -->
+
+<div class="slideshow-wrapper">
+<div class="slideshow-container-family">
+
+<div class="mySlides-family fade-family">
+  <img src="family1.png" style="width:100%">
+</div>
+
+<div class="mySlides-family fade-family">
+  <img src="family2.png" style="width:100%">
+</div>
+
+<div class="mySlides-family fade-family">
+  <img src="family3.png" style="width:100%">
+</div>
+
+<a class="prev-family" onclick="plusSlides(-1)">❮</a>
+<a class="next-family" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot-family" onclick="currentSlide(1)"></span> 
+  <span class="dot-family" onclick="currentSlide(2)"></span> 
+  <span class="dot-family" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<script src="slideshow.js"></script>
 
 <br>
 <br>
@@ -60,14 +143,27 @@
 
 <!-- Footer -->
 <footer>
-    <div class="container">
         <div class="social-links">
-            <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA==" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-            <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved.</p>
+        <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i></a>
+        
+        <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA=="  class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i></a>
     </div>
-</footer>
+	<div class="footer-utility">
+    <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved. 
+    | <a href="sitemap.html" class="footer-sitemap-link">Sitemap</a></p>
+</div>
+		
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-11-01</span>
+        <span><strong>Created:</strong> 2025-11-20</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    </footer>
 
 </html>

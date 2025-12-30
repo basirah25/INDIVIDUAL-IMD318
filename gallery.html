@@ -46,10 +46,104 @@
 </div>
 
 <div class="page-nav">
-    <a class="nav-arrow left"></a>
-    <a class="nav-arrow right"></a>
+    <a href="education.html" class="nav-arrow left">
+        <span>❮</span>
+    </a>
+    <a href="index.html" class="nav-arrow right">
+        <span>❯</span>
+    </a>
 </div>
 
+<script src="nav.js"></script>
+
+<!-- IMG Grid -->
+<br>
+<br>
+<br>
+<br>
+<button class="btn-grid" onclick="one()">1</button>
+  <button class="btn-grid active" onclick="two()">2</button>
+  <button class="btn-grid" onclick="four()">4</button>
+
+<div class="row-grid"> 
+  <div class="column-grid">
+    <img src="g1.jpeg" style="width:100%">
+    <img src="g2.jpeg" style="width:100%">
+    <img src="g3.jpeg" style="width:100%">
+    <img src="g4.jpeg" style="width:100%">
+    <img src="g5.jpeg" style="width:100%">
+    <img src="g6.jpeg" style="width:100%">
+    <img src="g7.jpeg" style="width:100%">
+  </div>
+  <div class="column-grid">
+    <img src="bff1.jpeg" style="width:100%">
+    <img src="bff2.jpeg" style="width:100%">
+    <img src="bff3.jpeg" style="width:100%">
+    <img src="bff5.jpeg" style="width:100%">
+    <img src="bff6.jpeg" style="width:100%">
+    <img src="bff7.jpeg" style="width:100%">
+  </div>  
+  <div class="column-grid">
+    <img src="girl1.jpeg" style="width:100%">
+    <img src="girl2.jpg" style="width:100%">
+    <img src="girl3.jpeg" style="width:100%">
+    <img src="girl4.jpeg" style="width:100%">
+    <img src="girl5.jpg" style="width:100%">
+    <img src="girl6.jpg" style="width:100%">
+    <img src="girl7.jpeg" style="width:100%">
+  </div>
+  <div class="column-grid">
+    <img src="in1.jpeg" style="width:100%">
+    <img src="in2.jpeg" style="width:100%">
+	<img src="class1.jpeg" style="width:100%">
+    <img src="in3.jpeg" style="width:100%">
+    <img src="in4.jpeg" style="width:100%">
+    <img src="class2.jpeg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column-grid"
+var elements = document.getElementsByClassName("column-grid");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn-grid");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 <br>
 <br>
@@ -60,14 +154,27 @@
 
 <!-- Footer -->
 <footer>
-    <div class="container">
         <div class="social-links">
-            <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA==" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-            <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved.</p>
+        <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i></a>
+        
+        <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA=="  class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i></a>
     </div>
-</footer>
+	<div class="footer-utility">
+    <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved. 
+    | <a href="sitemap.html" class="footer-sitemap-link">Sitemap</a></p>
+</div>
+		
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-11-01</span>
+        <span><strong>Created:</strong> 2025-11-20</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    </footer>
 
 </html>

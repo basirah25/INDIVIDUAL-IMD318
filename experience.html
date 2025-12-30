@@ -46,81 +46,102 @@
 </div>
 
 <div class="page-nav">
-    <a class="nav-arrow left"></a>
-    <a class="nav-arrow right"></a>
+    <a href="biodata.html" class="nav-arrow left">
+        <span>❮</span>
+    </a>
+    <a href="family.html" class="nav-arrow right">
+        <span>❯</span>
+    </a>
 </div>
 
+<script src="nav.js"></script>
 
 
 <br>
 <br>
-<div style="text-align:center">
-  <h2>My Experience <h2>
-  <p>Click on the boxes below:</p>
-</div>
+<br>
 
-<!-- Three columns -->
-<div class="row-exp">
-  <div class="column-exp" onclick="openTab('b1');" style="background:green;">
-    Box 1
+<!-- custom marker + container -->
+<h2 style="color:Indigo  ; background-color:PaleTurquoise ;font-family: Garamond;">My Experience</h2>
+<div class="flex-row-exp">
+
+
+  <div class="container-exp">
+    <img src="exp1.png" alt="EXP1">
+    <div class="content-exp">
+      <ul class="space-list">
+    <li><a href="https://www.ppkomp.com.my/">Competition</a></li> </ul>
+    </div>
   </div>
-  <div class="column-exp" onclick="openTab('b2');" style="background:blue;">
-    Box 2
+
+  <div class="container-exp">
+    <img src="exp2.png" alt="EXP2">
+    <div class="content-exp">
+       <ul class="space-list">
+    <li><a href="https://webpdt.kedah.gov.my/profil/pejabat-tanah-dan-daerah-kota-setar/">Internship</a></li> </ul>
+    </div>
   </div>
-  <div class="column-exp" onclick="openTab('b3');" style="background:red;">
-    Box 3
+
+  <div class="container-exp">
+    <img src="exp3.png" alt="EXP3">
+    <div class="content-exp">
+       <ul class="space-list">
+    <li><a href="https://youtu.be/TMoYntBXq-s">Project/ Assignment</a></li> </ul>
+    </div>
   </div>
-   <div class="column-exp" onclick="openTab('b3');" style="background:yellow;">
-    Box 3
-  </div>
 </div>
-
-<!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab-exp" style="display:none;background:green">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn-exp">&times;</span>
-  <img src="img_lights.jpg" alt="Lights" style="width:100%">
-  <h2>Box 1</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
-
-<div id="b2" class="containerTab-exp" style="display:none;background:blue">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn-exp">&times;</span>
-  <img src="img_lights.jpg" alt="Lights" style="width:100%">
-  <h2>Box 2</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
-
-<div id="b3" class="containerTab-exp" style="display:none;background:red">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn-exp">&times;</span>
-  <img src="img_lights.jpg" alt="Lights" style="width:100%">
-  <h2>Box 3</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
-
-<div id="b4" class="containerTab-exp" style="display:none;background:red">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn-exp">&times;</span>
-  <img src="img_lights.jpg" alt="Lights" style="width:100%">
-  <h2>Box 4</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
-
-<script>
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab-exp");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(tabName).style.display = "block";
-}
-</script>
-
-
-
-
 
 <br>
 <br>
+<!-- scroll img -->
+<div class="scroll-wrapper">
+<div class="scroll-container-exp">
+  <img src="exp4.jpeg" alt="scroll img 1" width="600" height="400">
+  <img src="exp5.jpg" alt="scroll img 2" width="600" height="400">
+  <img src="exp6.jpeg" alt="scroll img 3" width="600" height="400">
+  <img src="exp7.jpeg" alt="scroll img 4" width="600" height="400">
+  <img src="exp8.jpg" alt="scroll img 5" width="600" height="400">
+  <img src="exp9.jpeg" alt="scroll img 6" width="600" height="400">
+</div>
+</div>
+
+<br>
+<!-- outcomes -->
+<div class="row-exp-bwh">
+  <p style="font-size:30px; text-align:center; background-color:plum; color:navy;font-family: Garamond">Experience Outcomes</p>
+  <div class="column-exp-bwh">
+    <h4 class="column-title" style="font-family: Trebuchet;">Competition</h4>
+    <ul style="text-align: justify;padding-left: 50px;">
+	<li>Test your skills against high-level peers</li>
+	<li>Learn to work under tight deadlines</li>
+	<li>Improve problem-solving and creative thinking</li>
+	<li>Developing competitiveness</li>
+	</ul>
+  </div>
+
+  <div class="column-exp-bwh">
+    <h4 class="column-title" style="font-family: Trebuchet;">Internship</h4>
+    <ul style="text-align: justify;padding-left: 50px;">
+	<li>Gain real-world experience</li>
+	<li>Understand workplace culture</li>
+	<li>Apply academic theory</li>
+	<li>Develop professional behaviour</li>
+	</ul>
+  </div>
+
+  <div class="column-exp-bwh">
+    <h4 class="column-title" style="font-family: Trebuchet;">Project/ Assignment</h4>
+    <ul style="text-align: justify;padding-left: 50px;">
+	<li>Develop a tangible result</li>
+	<li>Master specific tools</li>
+	<li>Develop good time management</li>
+	<li>Encourage problem solving</li>
+	<li>Enhance skills</li>
+	</ul>
+  </div>
+
+</div>
+
 <br>
 <br>
 
@@ -128,14 +149,27 @@ function openTab(tabName) {
 
 <!-- Footer -->
 <footer>
-    <div class="container">
         <div class="social-links">
-            <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA==" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-            <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved.</p>
+        <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i></a>
+        
+        <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA=="  class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i></a>
     </div>
-</footer>
+	<div class="footer-utility">
+    <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved. 
+    | <a href="sitemap.html" class="footer-sitemap-link">Sitemap</a></p>
+</div>
+		
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-11-01</span>
+        <span><strong>Created:</strong> 2025-11-20</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    </footer>
 
 </html>
