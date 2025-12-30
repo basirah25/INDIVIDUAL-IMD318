@@ -36,8 +36,8 @@
     <button id="btnDown" class="arrow-btn">↓</button>
     <script src="arrow.js"></script>
 
-     <div id="moon">
-    <div class="hearts">
+     <div id="loading">
+    <div class="moon">
         <span>🌔</span>
         <span>🌗</span>
         <span>🌒</span>
@@ -46,28 +46,145 @@
 </div>
 
 <div class="page-nav">
-    <a class="nav-arrow left"></a>
-    <a class="nav-arrow right"></a>
+    <a href="family.html" class="nav-arrow left">
+        <span>❮</span>
+    </a>
+    <a href="gallery.html" class="nav-arrow right">
+        <span>❯</span>
+    </a>
+</div>
+
+<script src="nav.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="responsive-edu">
+  <div class="gallery-edu">
+    <a target="_blank" href="edu1.jpg">
+      <img src="edu1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc-edu" style="font-family: Georgia, serif;">2010-2011</div>
+  </div>
 </div>
 
 
-<br>
-<br>
-<br>
-<br>
+<div class="responsive-edu">
+  <div class="gallery-edu">
+    <a target="_blank" href="edu2.jpg">
+      <img src="edu2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc-edu" style="font-family: Georgia, serif;">2012-2017</div>
+  </div>
+</div>
 
+<div class="responsive-edu">
+  <div class="gallery-edu">
+    <a target="_blank" href="edu3.jpg">
+      <img src="edu3.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc-edu" style="font-family: Georgia, serif;">2018-2023</div>
+  </div>
+</div>
+
+<div class="responsive-edu">
+  <div class="gallery-edu">
+    <a target="_blank" href="edu4.jpg">
+      <img src="edu4.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc-edu" style="font-family: Georgia, serif;">2023-2026</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!--bahagian table expand-->
+
+<div class="row-edu">
+  <div class="column-edu" onclick="openTab('b1');" style="background:OliveDrab; ">
+    <strong>Kindergarden</strong>
+  </div>
+  <div class="column-edu" onclick="openTab('b2');" style="background:DarkOrchid  ;">
+    <strong>Primary School</strong>
+  </div>
+  <div class="column-edu" onclick="openTab('b3');" style="background:Sienna ;">
+    <strong>Highschool</strong>
+  </div>
+   <div class="column-edu" onclick="openTab('b4');" style="background:IndianRed    ;">
+    <strong>University</strong>
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab-edu" style="display:none; background:OliveDrab ; text-align: center; ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn-edu">&times;</span>
+  <img src="edu1.jpg" alt="Lights" style="width:30%">
+  <h2><strong>TADIKA Kemas Taman Aman</strong></h2>
+  <p style="text-align: justify; font-size:20px">Growing up in Taman Aman, Anak Bukit, my kindergarten years were defined by constant motion. I wasn't just a student who sat at a desk; I was an active participant in everything the kindergarten had to offer. I remember the excitement of play a role in the puppet shows, where I learned the power of a good story, and the thrill of netball games that taught me how to be a team player. Being active in both academics and sports back then shaped who I am now—someone who loves to stay busy, keep learning, and always stay in the game.</p>
+</div>
+
+<div id="b2" class="containerTab-edu" style="display:none;background:DarkOrchid  ; text-align: center;  ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn-edu">&times;</span>
+  <img src="edu2.jpg" alt="Lights" style="width:30%">
+  <h2><strong>Sekolah Kebangsaan Taman Aman (SKTA)</strong></h2>
+  <p style="text-align: justify; font-size:20px">Growing up in Taman Aman, Anak Bukit, i went to this school as my primary school. I was always the "active all-rounder" type. I spent my time in the Elite class, picking up Mandarin on top of the usual subjects, while balancing the responsibility of being the Ketua Pengawas Perpustakaan. Outside the classroom, I was just as busy—whether I was on the court for netball or staying on top of my study. It was a solid mix of high-level academics and sports that kept me moving.</p>
+</div>
+
+<div id="b3" class="containerTab-edu" style="display:none;background:Sienna ; text-align: center;  ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn-edu">&times;</span>
+  <img src="edu3.jpg" alt="Lights" style="width:30%">
+  <h2><strong>SMK Tunku Abdul Malik (SMKTAM)</strong></h2>
+  <p style="text-align: justify; font-size:20px">My high school years were where my interest in tech really took off. Starting in the ELIT class with the Dual Language Program (DLP), I tackled Science and Math in English while getting my first taste of coding through Asas Sains Komputer. By upper form, I moved into the Graphic class, specializing in Sains Komputer where I eventually built a competition website for my SPM project. Between the technical grind, I served as a School Prefect and stayed active in the Computer Club, competing in various events that sharpened my skills. It was a period of constant growth, balancing school leadership with a deep dive into the digital world.</p>
+</div>
+
+<div id="b4" class="containerTab-edu" style="display:none;background:IndianRed    ; text-align: center; ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn-edu">&times;</span>
+  <img src="edu4.jpg" alt="Lights" style="width:30%">
+  <h2><strong>UiTM Merbok</strong></h2>
+  <p style="text-align: justify; font-size:20px">Currently pursuing a Diploma in Information Management at UiTM Kedah (KCDIM110, Group A), I’ve focused on the intersection of data organization and technology. My studies have allowed me to dive deeper into information architecture while expanding my technical toolkit with new coding languages. I recently bridged the gap between theory and practice through a two-month internship at Pejabat Daerah Kota Setar, where I gained hands-on experience managing information within a professional governmental setting.</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab-exp");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+<br>
+<br>
+<br>
 </body>
 
 <!-- Footer -->
 <footer>
-    <div class="container">
         <div class="social-links">
-            <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA==" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-            <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved.</p>
+        <a href="https://youtube.com/@airealz2501?si=sRvPPMGWZu5nts9v" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i></a>
+        
+        <a href="https://www.instagram.com/basirah2501?igsh=MXZ1ZnptZzM2Z2FtMA=="  class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.tiktok.com/@basirah288?_r=1&_t=ZS-9200MAjTNdH" class="social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i></a>
     </div>
-</footer>
+	<div class="footer-utility">
+    <p>&copy; 2025 🚀Click of My Life 🖋. All Rights Reserved. 
+    | <a href="sitemap.html" class="footer-sitemap-link">Sitemap</a></p>
+</div>
+		
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-11-01</span>
+        <span><strong>Created:</strong> 2025-11-20</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    </footer>
 
 </html>
