@@ -73,7 +73,7 @@ background-color: LemonChiffon;
     left: 0;
     width: 100%;
     height: 100%;
-    background: DimGray;
+    background: #181818;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +102,7 @@ background-color: LemonChiffon;
 /* Loading text */
 #loading p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     color: skyblue;
     font-family: "Poppins", sans-serif;
 }
@@ -123,44 +123,44 @@ background-color: LemonChiffon;
     pointer-events: none;
 }
 
-/* Arrow next previous page*/
+/* Arrow next previous page */
+.page-nav {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+    z-index: 9999; 
+}
+
 .nav-arrow {
     width: 60px;
     height: 60px;
-    position: relative;
+    position: relative; 
     text-decoration: none;
-    pointer-events: auto;
+    pointer-events: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
     transition: 0.25s;
+    background-color: rgba(221, 160, 221, 0.3); 
+    border-radius: 50%;
 }
-
 
 .nav-arrow.left span,
 .nav-arrow.right span {
-    position: relative;
-    z-index: 10;
     font-size: 30px;
     color: white;
 }
 
-.nav-arrow.left::marker { display:none; }
-.nav-arrow.right::marker { display:none; }
-
-.nav-arrow.left span {
-    content: "❮";
-}
-
-.nav-arrow.right span {
-    content: "❯";
-}
-
 .nav-arrow.right:hover,
 .nav-arrow.left:hover {
-    transform: scale(1.15);
-	background-color: Plum;
+    transform: scale(1.2);
+    background-color: Plum;
     filter: drop-shadow(0 6px 12px rgba(255,150,200,0.6));
 }
 
@@ -309,6 +309,70 @@ footer {
     transform: translateY(-3px);
 }
 
+
+/*Sitemap*/
+.sitemap {
+        padding: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+
+    .sitemap h1 {
+        text-align: center;
+        margin-bottom: 40px;
+		text-decoration:underline;
+    }
+
+    .sitemap-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+
+    .sitemap-col h3 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    .sitemap-col ul {
+        list-style: disc; 
+        padding-left: 20px; 
+        margin: 0;
+    }
+
+    .sitemap-col li {
+        margin-bottom: 10px;
+        color: #007bff; 
+    }
+
+    .sitemap-col a {
+        text-decoration: none;
+        color: #555;
+        transition: color 0.3s;
+    }
+
+    .sitemap-col a:hover {
+        color: #007bff;
+        text-decoration: underline;
+    }
+	
+	.footer-sitemap-link {
+    color: white; 
+    text-decoration: underline; 
+    font-family: inherit;
+    transition: color 0.2s ease-in-out; 
+	}
+	
+	.footer-sitemap-link:hover {
+    color: plum; 
+    text-decoration: underline; 
+    cursor: pointer;
+	}
+
+
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -329,6 +393,24 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* Styling for the new date information */
+.info-dates {
+    margin-top: 15px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7); 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.info-dates strong {
+    color: skyblue;
+    font-weight: 600;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -359,7 +441,7 @@ footer {
 }
 
 
-/*Image Map*/
+/*Image Map kat biodata*/
 .flex-container {
   display: flex;
 }
@@ -430,7 +512,7 @@ h4 {
   float: left;
   width: 50%;
   padding: 5px;
-  color: Teal ;
+  color: black ;
 }
 
 /* Clearfix (clear floats) */
@@ -502,7 +584,7 @@ h4 {
 	max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background: linen;
+    background: HoneyDew;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(255, 180, 210, 0.6);
     text-align: center;
@@ -511,14 +593,14 @@ h4 {
 .video-wrapper video {
     display: block;
     margin: 0 auto;
-    width: 70%; /* boleh adjust */
+    width: 70%; 
     max-width: 700px;
     border-radius: 20px;
 }
 
 .video-wrapper h2 {
     font-family: "Poppins", sans-serif;
-    color: indigo ;
+    color: Navy ;
     margin-bottom: 15px;
 }
 
@@ -543,32 +625,415 @@ h4 {
 
 /* PAGE EXPERIENCE*/
 
-.column-exp {
-  float: left;
-  width: 25%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
+/* custom marker + container*/
+.space-list {
+    list-style-position: inside; 
+    padding: 0;
+  }
+
+  .space-list li {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: list-item; 
+	text-align:center;
+  }
+
+  .space-list li::marker {
+    content: "🪐 ";
+	color:blue;
+  }
+
+
+  .space-list a {
+    color: PaleTurquoise;
+	font-family: Georgia, serif;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .space-list a:hover {
+    color: plum ;
+    text-shadow: 0 0 10px #f72585;
+  }
+  
+* {
+  box-sizing: border-box;
 }
 
-.containerTab-exp {
+/* img and text appear on img */
+.flex-row-exp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  background-color:orchid;
+}
+
+.container-exp {
+  position: relative;
+  width: fit-content; 
+  display: block;
+}
+
+.container-exp img {
+  display: block; 
+  max-width: 100%;
+  height: auto;
+}
+
+.container-exp .content-exp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
   padding: 20px;
-  color: white;
+  width: 100%; 
 }
 
-/* Clear floats after the columns */
-.row-exp:after {
+/* scroll exp img*/
+
+div.scroll-container-exp {
+  background-color: black ;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container-exp img {
+  padding: 10px;
+}
+
+.scroll-wrapper {
+  max-width: 1200px;      
+  margin: 20px auto;      
+  padding: 20px;
+  background-color:MediumOrchid  ;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* outcomes exp*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column-exp-bwh {
+  float: left;
+  width: 31%; 
+  margin: 1%;
+  padding: 20px;
+  color: Indigo;
+  background-color: PaleTurquoise ; 
+  border-radius: 10px; 
+  min-height: 300px;
+  font-size:20px;
+  }
+
+.row-exp-bwh::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column-title {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+
+
+/*PAGE FAMILY*/
+
+/* Intro family members*/
+* { box-sizing: border-box; }
+
+.row-fam {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  background-color: Teal ;    
+  padding: 10px;             
+  border-radius: 4px;
+}
+
+
+.column-fam  {
+  flex: 0 0 20%; 
+  padding: 5px; 
+}
+
+.container-fam  {
+  position: relative;
+  width: 100%;
+}
+
+.image-fam {
+  display: block;
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  object-position: center; 
+  border-radius: 4px;
+}
+
+
+.overlay-fam  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  padding: 10px;
+  font-size:30px;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.container-fam:hover .overlay-fam  {
+  opacity: 1;
+}
+
+/* slideshow family */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides-family {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container-family {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev-family, .next-family {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next-family {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-family:hover, .next-family:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot-family {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-family, .dot-family:hover {
+  background-color: #717171;
+}
+
+.fade-family {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slideshow-wrapper {
+  max-width: 1200px;      
+  margin: 20px auto;      
+  padding: 20px;
+  background-color:MistyRose  ;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev-family, .next-family,.text-family {font-size: 11px}
+}
+
+
+
+/*PAGE EDUCATION*/
+
+/*part gambar tahun sekolah*/
+div.gallery-edu {
+  border: 1px solid #ccc;
+}
+
+div.gallery-edu:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-edu img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc-edu {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive-edu {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive-edu {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive-edu {
+    width: 100%;
+  }
+}
+
+.clearfix-edu:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Closable button inside the container tab */
-.closebtn-exp {
+div.gallery-edu img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  display: block;
+}
+
+
+div.gallery-edu {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+div.desc-edu {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+/*part sekolah yg boleh tekan untuk tengok explaination*/
+.column-edu {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab-edu {
+  padding: 20px;
+  color: white;
+}
+
+.row-edu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn-edu {
   float: right;
   color: white;
   font-size: 35px;
   cursor: pointer;
+}
+
+/*PAGE GALLERY*/
+
+/*image grid*/
+
+*{
+  box-sizing: border-box;
+}
+
+.row-grid {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding: 10px;        
+  background: #181818;     
+  border-radius: 8px
+}
+
+/* Create two equal columns that sits next to each other */
+.column-grid {
+  -ms-flex: 25%; /* IE 10 */
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column-grid img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn-grid {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-grid:hover {
+  background-color: #ddd;
+}
+
+.btn-grid.active {
+  background-color: #666;
+  color: white;
 }
